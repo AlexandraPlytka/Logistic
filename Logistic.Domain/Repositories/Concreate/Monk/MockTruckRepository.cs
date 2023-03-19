@@ -1,8 +1,7 @@
 ﻿using Logistic.Domain.Models;
 using Logistic.Domain.Repositories.Abstract;
-using System;
 
-namespace Logistic.Domain.Repositories.Mock
+namespace Logistic.Domain.Repositories.Concreate.Mock
 {
     internal class MockTruckRepository : ITruckRepository
     {

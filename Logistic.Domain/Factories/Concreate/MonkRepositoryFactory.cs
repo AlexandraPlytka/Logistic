@@ -1,12 +1,6 @@
 ﻿using Logistic.Domain.Factories.Abstract;
 using Logistic.Domain.Repositories.Abstract;
-using Logistic.Domain.Repositories.Concreate;
-using Logistic.Domain.Repositories.Mock;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Logistic.Domain.Repositories.Concreate.Mock;
 
 namespace Logistic.Domain.Factories.Mock
 {

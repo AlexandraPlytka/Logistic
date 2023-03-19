@@ -1,12 +1,7 @@
 ﻿using Logistic.Domain.Models;
 using Logistic.Domain.Repositories.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Logistic.Domain.Repositories.Mock
+namespace Logistic.Domain.Repositories.Concreate.Mock
 {
     public class MockDriverRepository : IDriverRepository
     {

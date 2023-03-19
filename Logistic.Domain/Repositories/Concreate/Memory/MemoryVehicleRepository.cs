@@ -1,9 +1,7 @@
 ﻿using Logistic.Domain.Models;
 using Logistic.Domain.Repositories.Abstract;
-using System;
-using System.Security.AccessControl;
 
-namespace Logistic.Domain.Repositories.Concreate
+namespace Logistic.Domain.Repositories.Concreate.Memory
 {
     internal class MemoryVehicleRepository : IVehicleRepository
     {

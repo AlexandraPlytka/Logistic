@@ -54,12 +54,13 @@
     <Compile Include="Repositories\Abstract\IDriverRepository.cs" />
     <Compile Include="Repositories\Abstract\ITruckRepository.cs" />
     <Compile Include="Repositories\Abstract\IVehicleRepository.cs" />
-    <Compile Include="Repositories\Monk\MockDriverRepository.cs" />
-    <Compile Include="Repositories\Monk\MockTruckRepository.cs" />
-    <Compile Include="Repositories\Monk\MockVehicleRepository.cs" />
-    <Compile Include="Repositories\Concreate\MemoryDriverRepository.cs" />
-    <Compile Include="Repositories\Concreate\MemoryTruckRepository.cs" />
-    <Compile Include="Repositories\Concreate\MemoryVehicleRepository.cs" />
+    <Compile Include="Repositories\Concreate\Monk\MockDriverRepository.cs" />
+    <Compile Include="Repositories\Concreate\Monk\MockTruckRepository.cs" />
+    <Compile Include="Repositories\Concreate\Monk\MockVehicleRepository.cs" />
+    <Compile Include="Repositories\Concreate\Memory\MemoryDriverRepository.cs" />
+    <Compile Include="Repositories\Concreate\Memory\MemoryTruckRepository.cs" />
+    <Compile Include="Repositories\Concreate\Memory\MemoryVehicleRepository.cs" />
+    <Compile Include="Repositories\Concreate\Txt\TxtBaseRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
