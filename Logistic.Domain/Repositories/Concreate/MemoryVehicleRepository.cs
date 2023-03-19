@@ -5,11 +5,11 @@ using System.Security.AccessControl;
 
 namespace Logistic.Domain.Repositories.Concreate
 {
-    internal class MonkVehicleRepository : IVehicleRepository
+    internal class MemoryVehicleRepository : IVehicleRepository
     {
         private Vehicle[] vehicles;
         int count;
-        public MonkVehicleRepository()
+        public MemoryVehicleRepository()
         {
             vehicles = new Vehicle[100];
             count = 0;

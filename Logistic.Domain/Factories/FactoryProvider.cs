@@ -18,14 +18,9 @@ namespace Logistic.Domain.Factories
             if (type == FactoryType.Memory)
                 return new MemoryRepositoryFactory();
             else if (type == FactoryType.Mock)
-                return MockRepositoryFactory();
+                return new MockRepositoryFactory();
             else
                 throw new Exception("Wrong factory type");
-        }
-
-        private IRepositoriesFactory MockRepositoryFactory()
-        {
-            throw new NotImplementedException();
         }
     }
 }

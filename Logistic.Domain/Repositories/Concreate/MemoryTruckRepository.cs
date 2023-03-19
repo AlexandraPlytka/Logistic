@@ -4,11 +4,11 @@ using System;
 
 namespace Logistic.Domain.Repositories.Concreate
 {
-    internal class MonkTruckRepository : ITruckRepository
+    internal class MemoryTruckRepository : ITruckRepository
     {
         private Truck[] trucks;
         int count;
-        public MonkTruckRepository()
+        public MemoryTruckRepository()
         {
             trucks= new Truck[100];
             count = 0; 
