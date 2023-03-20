@@ -13,7 +13,7 @@ namespace Logistic.Admin.UI
         private IDriverRepository driverRepository;
         public Menu()
         {
-            var factoryProvider = new FactoryProvider(FactoryType.Memory);
+            var factoryProvider = new FactoryProvider(FactoryType.Txt);
             var factory = factoryProvider.GetRepositoryFactory();
 
             vehicleRepository = factory.GetVehicleRepository();

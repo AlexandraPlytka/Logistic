@@ -3,6 +3,7 @@
     public enum FactoryType
     {
         Memory, 
-        Mock
+        Mock,
+        Txt
     }
 }

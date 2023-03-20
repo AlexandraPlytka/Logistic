@@ -12,7 +12,7 @@ namespace Logistic.User.UI
         private IDriverRepository driverRepository;
         public Menu()
         {
-            var factoryProvider = new FactoryProvider(FactoryType.Mock);
+            var factoryProvider = new FactoryProvider(FactoryType.Txt);
             var factory = factoryProvider.GetRepositoryFactory();
 
             vehicleRepository = factory.GetVehicleRepository();

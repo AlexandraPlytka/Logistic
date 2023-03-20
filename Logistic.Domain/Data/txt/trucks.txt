@@ -1,0 +1,4 @@
+﻿truck1,vr1,2021,200,100
+gmc2,mdl2,2016,190,90
+nmsasd,vsda,2004,500,200
+fdsnjf,kwokes,2023,320,170

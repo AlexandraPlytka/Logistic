@@ -41,17 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Convertors\txt\ITxtConvector.cs" />
+    <Compile Include="Convertors\txt\DriverTxtConvertor.cs" />
+    <Compile Include="Convertors\txt\TruckTxtConvertor.cs" />
+    <Compile Include="Convertors\txt\VehicleTxtConvertor.cs" />
     <Compile Include="Enums\FactoryType.cs" />
     <Compile Include="Exceptions\ModelStateException.cs" />
     <Compile Include="Factories\Abstract\IRepositoriesFactory.cs" />
+    <Compile Include="Factories\Concreate\TxtRepositoryFactory.cs" />
     <Compile Include="Factories\Concreate\MonkRepositoryFactory.cs" />
     <Compile Include="Factories\Concreate\MemoryRepositoryFactory.cs" />
     <Compile Include="Factories\FactoryProvider.cs" />
+    <Compile Include="Loggers\TxtLogger.cs" />
     <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\Truck.cs" />
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Abstract\IDriverRepository.cs" />
+    <Compile Include="Repositories\Abstract\IRepository.cs" />
     <Compile Include="Repositories\Abstract\ITruckRepository.cs" />
     <Compile Include="Repositories\Abstract\IVehicleRepository.cs" />
     <Compile Include="Repositories\Concreate\Monk\MockDriverRepository.cs" />
@@ -61,7 +68,16 @@
     <Compile Include="Repositories\Concreate\Memory\MemoryTruckRepository.cs" />
     <Compile Include="Repositories\Concreate\Memory\MemoryVehicleRepository.cs" />
     <Compile Include="Repositories\Concreate\Txt\TxtBaseRepository.cs" />
+    <Compile Include="Repositories\Concreate\Txt\TxtDriverRepository.cs" />
+    <Compile Include="Repositories\Concreate\Txt\TxtTruckRepository.cs" />
+    <Compile Include="Repositories\Concreate\Txt\TxtVehicleRepository.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\txt\drivers.txt" />
+    <Content Include="Data\txt\errors.txt" />
+    <Content Include="Data\txt\trucks.txt" />
+    <Content Include="Data\txt\vehicles.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
